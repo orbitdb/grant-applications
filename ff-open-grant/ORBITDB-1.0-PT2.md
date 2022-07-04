@@ -82,7 +82,7 @@ User Project Sample:
 
 We will be delivering OrbitDB 1.0. This will be a full, stable release.
 
-[OrbitDB 1.0 Release Tracker]()
+[OrbitDB 1.0 Release Tracker]() (broken link, not finished yet)
 
 ## Development Roadmap
 
