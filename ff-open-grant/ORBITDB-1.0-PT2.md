@@ -187,7 +187,6 @@ Anders:
 
 Mark:
   - https://github.com/orbitdb : core contributer to orbitdb, its submodules, and resources
-  - https://github.com/orbitdb/field-manual : The Offical User's Guide to OrbitDB (outdated atm but may be revived after 1.0)
   - https://github.com/tallylab/tallylab : local-first, end-to-end encrypted data diary app
   - https://github.com/orbitdb/orbit-db-powergate-io : A bridge between OrbitDB and Powergate
 
