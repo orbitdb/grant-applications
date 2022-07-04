@@ -42,13 +42,13 @@ OrbitDB provides an easy way for users to build real-time, decentralized, and co
 
 Building applications this way has a few nice benefits over current solutions. The user has control over their data, often stored and updated locally. The updates made locally are treated as the source of truth. This property is often referred to as local-first and can give a very responsive user experience.
 
-Not all applications can be built with peer-to-peer databases like OrbitDB. The types of applications that can be solved are called invariant confluent. These types of applications usually fall into the media or communication category, things like most of Google's suite of applications.
+Not all applications can be built with peer-to-peer databases like OrbitDB. The types of applications that can be solved are called \*invariant confluent. These types of applications usually fall into the media or communication category, things like most of Google's suite of applications.
 
 The data flexibility that comes with the Merkle-CRDT data structure is also notable. Causal links between messages in the Merkle-DAG provide ordering information and deduplication, this separates the CRDT from the underlying network properties and replication. Systems like IPFS, Filecoin, or other storage backend can be used to backup and restore replicas.
 
 We think exploring this area by maintaining and upgrading OrbitDB is worthwhile. We believe it will result in more and better user-centric dapps that utilize technologies like IPFS and Filecoin.
 
-\*Invariant confluence means that any two messages applied asynchronously will not invalidate an applications invariant. For example, an invariant of blockchains is that no account can have a negative balance.
+\*invariant confluence means that any two messages applied asynchronously will not invalidate an applications invariant. For example, an invariant of blockchains is that no account can have a negative balance.
 
 #### Usage Stats
 
@@ -56,17 +56,17 @@ We think exploring this area by maintaining and upgrading OrbitDB is worthwhile.
 
 Github Stars:
 
-![orbit DB github stars](./.assets/orbitdb-gh-stars.png)
+<img src="https://github.com/orbitdb/grant-applications/blob/main/ff-open-grant/.assets/orbitdb-gh-stars.png?raw=true" width="450" />
 
 NPM Installs:
 
   - weekly:
 
-![npm weekly installs](./.assets/orbitdb-npm-weekly.png)
+<img src="https://github.com/orbitdb/grant-applications/blob/main/ff-open-grant/.assets/orbitdb-npm-weekly.png?raw=true" width="200" />
 
   - lifetime:
 
-![npm lifetime installs](./.assets/orbitdb-npm-lifetime.png)
+<img src="https://github.com/orbitdb/grant-applications/blob/main/ff-open-grant/.assets/orbitdb-npm-lifetime.png?raw=true" width="700" />
 
 User Project Sample:
 
@@ -139,7 +139,7 @@ The plan for this grant is to build a good foundation that will keep the project
 
 Following the full 1.0 release there will still be room for improvement:
 
-Near future:
+Nearer future:
   - ascending traversal: databases can read operations to the database in ascending order.
   - active replicator: implement an active replicator that pushes data, may use orbitdb with just libp2p. requested by a few users.
   - write-ahead log: keep N operations unapplied to the database index, apply them on read. improves state caculation in some situations.
