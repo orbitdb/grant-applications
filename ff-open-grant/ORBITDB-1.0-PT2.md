@@ -44,7 +44,7 @@ Building applications this way has a few nice benefits over current solutions. T
 
 Not all applications can be built with peer-to-peer databases like OrbitDB. The types of applications that can be solved are called \*invariant confluent. These types of applications usually fall into the media or communication category, things like most of Google's suite of applications.
 
-The data flexibility that comes with the Merkle-CRDT data structure is also notable. Causal links between messages in the Merkle-DAG provide ordering information and deduplication, this separates the CRDT from the underlying network properties and replication. Systems like IPFS, Filecoin, or other storage backend can be used to backup and restore replicas.
+The data flexibility that comes with the Merkle-CRDT data structure is also notable. Causal links between messages in the Merkle-DAG provide ordering information and deduplication, this separates the CRDT from the underlying network properties and replication. Systems like IPFS, Filecoin, or other storage backends can be used to backup and restore replicas.
 
 We think exploring this area by maintaining and upgrading OrbitDB is worthwhile. We believe it will result in more and better user-centric dapps that utilize technologies like IPFS and Filecoin.
 
@@ -82,7 +82,7 @@ User Project Sample:
 
 We will be delivering OrbitDB 1.0. This will be a full, stable release.
 
-[OrbitDB 1.0 Release Tracker]() (broken link, not finished yet)
+[OrbitDB 1.0 Release Tracker](https://github.com/orbitdb/orbit-db/issues/1008)
 
 ## Development Roadmap
 
@@ -93,15 +93,21 @@ We will be delivering OrbitDB 1.0. This will be a full, stable release.
 <!-- - The amount of funding required for each milestone -->
 <!-- - How much time this milestone will take to achieve (using real dates) -->
 
-**(LATE JULY 2022)** OrbitDB 1.0 BETA
+**(JULY 2022)** OrbitDB 1.0 Beta
+  - [orbitdb/orbit-db#1002](https://github.com/orbitdb/orbit-db/issues/1002)
   - base 1.0 implementation
-  - unit and integration tests
-  - only key value database
+  - 90% test coverage
+  - key value database
   - static access control
   - public API documentation
 
+---
+
+[Post OrbitDB 1.0 Beta Tasks](https://github.com/orbitdb/orbit-db/issues/1003)
+
 **(AUGUST 2022)** Draft Protocol Spec Merge
-  - all protocol components defined
+  - [orbitdb/spec#1](https://github.com/orbitdb/spec/issues/1)
+  - base protocol components defined
   - beta implementation kept in lockstep with spec
 
 **(SEPTEMBER 2022)** Public API is Locked
@@ -114,7 +120,7 @@ We will be delivering OrbitDB 1.0. This will be a full, stable release.
 
 **(OCTOBER 2022)** Focus on Automation
   - fixup testing and publishing automation
-  - add performance regression checks
+  - performance regression checks
   - automate github release and change logs
   - automate api documentation
 
@@ -122,10 +128,16 @@ We will be delivering OrbitDB 1.0. This will be a full, stable release.
   - feed database
   - quicker database queries after opening via index/graph snapshots
   - typescript used where external data is received
+  - generalized batch operations
+  - reserve mulicodec table spot for binary orbitdb address
+
+---
 
 **(EOY 2022)** OrbitDB 1.0 Release
+  - [orbitdb/orbit-db#1008](https://github.com/orbitdb/orbit-db/issues/1008)
   - protocol spec finalized
   - updated documentation and examples
+  - security audit has finished
 
 ## Total Budget Requested
 
