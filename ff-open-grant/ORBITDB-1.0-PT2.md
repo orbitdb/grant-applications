@@ -161,6 +161,7 @@ Further Future:
   - next gen access control: dynamic access control that doesn't affect the entire history
   - cbor database: a cbor CRDT, similar to automerge's JSON CRDT. may require ascending traversal.
   - dynamic topological sort: maintain a dynamic topological sort of the DAG. likely to have significant effects in a number of areas.
+  - async ratchet tree encryption: use something like message layer security for scalable multi-writer encryption of database operations.
 
 
 # Team
