@@ -38,13 +38,13 @@ The work has been focused on:
 
 <!-- - What are the benefits to getting this right? -->
 
-OrbitDB provides an easy way for users to build real-time, decentralized, and collaborative applications. Many of the services that have collected user data into a handful of systems can have alternatives. These alternatives will act more like protocols and the valuable user data will be dispersed.
+OrbitDB provides an easy way for users to build real-time, decentralized, and collaborative applications. It can be used to build alternatives to many of the services that have collected user data into a handful of systems. These alternatives will act more like protocols and the valuable user data will be dispersed.
 
-Building applications this way has a few nice benefits over current solutions. The user has control over their data, often stored and updated locally. The updates made locally are treated as the source of truth. This property is often referred to as local-first and can give a very responsive user experience.
+Building applications this way has a few nice benefits and goes hand in hand with delay tolerant network designs like IPFS. The user has control over their data, often stored and updated locally. The updates made locally are treated as the source of truth. This property is often referred to as local-first and can give a very responsive user experience.
+
+The flexibility that the Merkle-CRDT data structure enables is also notable. Causal links between messages in the Merkle-DAG provide ordering information and deduplication, this separates the CRDT from the underlying network properties and replication. Systems like IPFS, Filecoin, or other storage backends can be used to backup and restore replicas.
 
 Not all applications can be built with peer-to-peer databases like OrbitDB. The types of applications that can be solved are called \*invariant confluent. These types of applications usually fall into the media or communication category, things like most of Google's suite of applications.
-
-The data flexibility that comes with the Merkle-CRDT data structure is also notable. Causal links between messages in the Merkle-DAG provide ordering information and deduplication, this separates the CRDT from the underlying network properties and replication. Systems like IPFS, Filecoin, or other storage backends can be used to backup and restore replicas.
 
 We think exploring this area by maintaining and upgrading OrbitDB is worthwhile. We believe it will result in more and better user-centric dapps that utilize technologies like IPFS and Filecoin.
 
@@ -54,17 +54,11 @@ We think exploring this area by maintaining and upgrading OrbitDB is worthwhile.
 
 <!-- This section should be 1-3 paragraphs long. -->
 
-Github Stars:
+⭐ [orbitdb/orbit-db](https://github.com/orbitdb/orbit-db) Github Stars: `7k`
 
-<img src="https://github.com/orbitdb/grant-applications/blob/main/ff-open-grant/.assets/orbitdb-gh-stars.png?raw=true" width="450" />
+💽 [orbitdb](https://www.npmjs.com/package/orbit-db) weekly installs: `~3000`
 
-NPM Installs:
-
-  - weekly:
-
-<img src="https://github.com/orbitdb/grant-applications/blob/main/ff-open-grant/.assets/orbitdb-npm-weekly.png?raw=true" width="200" />
-
-  - lifetime:
+📈 lifetime weekly installs:
 
 <img src="https://github.com/orbitdb/grant-applications/blob/main/ff-open-grant/.assets/orbitdb-npm-lifetime.png?raw=true" width="700" />
 
@@ -162,6 +156,7 @@ Further Future:
   - cbor database: a cbor CRDT, similar to automerge's JSON CRDT. may require ascending traversal.
   - dynamic topological sort: maintain a dynamic topological sort of the DAG. likely to have significant effects in a number of areas.
   - async ratchet tree encryption: use something like message layer security for scalable multi-writer encryption of database operations.
+  - graphsync replicator: replication that uses graphsync to quickly replicate operations from peers.
 
 
 # Team
