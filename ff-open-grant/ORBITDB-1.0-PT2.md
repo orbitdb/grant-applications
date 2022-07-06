@@ -57,6 +57,10 @@ We think exploring this area by maintaining and upgrading OrbitDB is worthwhile.
 
 ⭐ [orbitdb/orbit-db](https://github.com/orbitdb/orbit-db) Github Stars: `7k`
 
+🍴 [orbitdb/orbit-db](https://github.com/orbitdb/orbit-db) Github Forks: `~500`
+
+🧑‍🔧 [orbitdb/orbit-db](https://github.com/orbitdb/orbit-db) Github Contributors: `62`
+
 💽 [orbitdb](https://www.npmjs.com/package/orbit-db) weekly installs: `~3000`
 
 📈 lifetime weekly installs:
