@@ -1,4 +1,5 @@
 
+
 # Open Grant Proposal: `OrbitDB 1.0 pt. 2`
 
 **Name of Project:** [OrbitDB](https://github.com/orbitdb/orbit-db)
@@ -19,10 +20,10 @@
 
 OrbitDB is a peer-to-peer database built on top of IPFS. It uses Merkle-CRDTs (think CRDTs stored in and inter-linked by a Merkle-DAG) to reference, store, and transfer operations made to the database. While blockchain systems are good at consensus, systems like OrbitDB are good at convergence; meaning database peers can handle network partitions and allow for fully asynchronous updates. We believe this will be extremely powerful in media and communication applications by increasing their safety and resilience to network delay.
 
-The project has been around for a number of years but has not matured with IPFS primarily due to funding. We would like to continue our work with a grant *part 2* which will allow us to finish work from the last six months.
+The project has been around for several years but has not matured with IPFS primarily due to funding. We would like to continue our work with a grant *part 2* which will allow us to finish work from the last six months.
 
 The work has been focused on:
-  - staying compatible with the latest js-ipfs api
+  - staying compatible with the latest js-ipfs API
   - writing a specification for the protocol
   - cleaning up the codebase so it will be easier to maintain and improve
   - finding a stable API
@@ -40,15 +41,15 @@ The work has been focused on:
 
 OrbitDB provides an easy way for users to build real-time, decentralized, and collaborative applications. It can be used to build alternatives to many of the services that have collected user data into a handful of systems. These alternatives will act more like protocols and the valuable user data will be dispersed.
 
-Building applications this way has a few nice benefits and goes hand in hand with delay tolerant network designs like IPFS. The user has control over their data, often stored and updated locally. The updates made locally are treated as the source of truth. This property is often referred to as local-first and can give a very responsive user experience.
+Building applications this way has a few nice benefits and goes hand in hand with delay-tolerant network designs like IPFS. The user has control over their data, often stored and updated locally. The updates made locally are treated as the source of truth. This property is often referred to as local-first and can give a very responsive user experience.
 
 The flexibility that the Merkle-CRDT data structure enables is also notable. Causal links between messages in the Merkle-DAG provide ordering information and deduplication, this separates the CRDT from the underlying network properties and replication. Systems like IPFS, Filecoin, or other storage backends can be used to backup and restore replicas.
 
 Not all applications can be built with peer-to-peer databases like OrbitDB. The types of applications that can be solved are called \*invariant confluent. These types of applications usually fall into the media or communication category, things like most of Google's suite of applications.
 
-We think exploring this area by maintaining and upgrading OrbitDB is worthwhile. We believe it will result in more and better user-centric dapps that utilize technologies like IPFS and Filecoin.
+We think exploring this area by maintaining and upgrading OrbitDB is worthwhile. We believe it will result in more and better user-centric apps that utilize technologies like IPFS and Filecoin.
 
-\*invariant confluence means that any two messages applied asynchronously will not invalidate an applications invariant. For example, an invariant of blockchains is that no account can have a negative balance.
+\*invariant confluence means that any two messages applied asynchronously will not invalidate an application's invariant. For example, an invariant of blockchains is that no account can have a negative balance.
 
 #### Usage Stats
 
@@ -109,13 +110,13 @@ We will be delivering OrbitDB 1.0. This will be a full, stable release.
 **(SEPTEMBER 2022)** Security Audit Begins
 
 **(SEPTEMBER 2022)** Heavier Testing
-  - work with Berty team on cross implementation testing
-  - increase robustness of replication tests
+  - work with the Berty team on cross-implementation testing
+  - increase the robustness of replication tests
 
 **(OCTOBER 2022)** Focus on Automation
   - fixup testing and publishing automation
   - performance regression checks
-  - automate github release and change logs
+  - automate Github release and change logs
   - automate api documentation
 
 **(OCTOBER - NOVEMBER 2022)** Features and Improvements
@@ -123,7 +124,7 @@ We will be delivering OrbitDB 1.0. This will be a full, stable release.
   - quicker database queries after opening via index/graph snapshots
   - typescript used where external data is received
   - generalized batch operations
-  - reserve mulicodec table spot for binary orbitdb address
+  - reserve multicodec table spot for binary orbitdb address
 
 ---
 
@@ -141,22 +142,22 @@ We will be delivering OrbitDB 1.0. This will be a full, stable release.
 
 <!-- Specify your team's long-term plans to maintain this software and upgrade it over time. -->
 
-The plan for this grant is to build a good foundation that will keep the project hyper-maintainable over the years. After the project reaches this level of maintainability, the key is cultivate a thriving userbase. We believe we can do this by having a good 1.0 release and then continueing to provide a supportive community chat, building features/dev-tools for orbitdb, and providing high quality resources for learning.
+The plan for this grant is to build a good foundation that will keep the project hyper-maintainable over the years. After the project reaches this level of maintainability, the key is to cultivate a thriving userbase. We believe we can do this by having a good 1.0 release and then continuing to provide a supportive community chat, building features/dev-tools for orbitdb, and providing high-quality resources for learning.
 
 Following the full 1.0 release there will still be room for improvement:
 
 Nearer future:
   - ascending traversal: databases can read operations to the database in ascending order.
-  - active replicator: implement an active replicator that pushes data, may use orbitdb with just libp2p. requested by a few users.
-  - write-ahead log: keep N operations unapplied to the database index, apply them on read. improves state caculation in some situations.
+  - active replicator: implement an active replicator that pushes data, and may use orbitdb with just libp2p. requested by a few users.
+  - write-ahead log: keep N operations unapplied to the database index, apply them on read. improves state calculation in some situations.
   - full typescript
 
 Further Future:
-  - next gen access control: dynamic access control that doesn't affect the entire history
-  - cbor database: a cbor CRDT, similar to automerge's JSON CRDT. may require ascending traversal.
-  - dynamic topological sort: maintain a dynamic topological sort of the DAG. likely to have significant effects in a number of areas.
+  - next-gen access control: dynamic access control that doesn't affect the entire history
+  - CBOR database: a CBOR CRDT, similar to Automerge's JSON CRDT. may require ascending traversal.
+  - dynamic topological sort: maintain a dynamic topological sort of the DAG. likely to have significant effects in many areas.
   - async ratchet tree encryption: use something like message layer security for scalable multi-writer encryption of database operations.
-  - graphsync replicator: replication that uses graphsync to quickly replicate operations from peers.
+  - Graphsync replicator: replication that uses Graphsync to quickly replicate operations from peers.
 
 
 # Team
@@ -181,22 +182,22 @@ I have led the team starting with the original Rust IPFS grant in late 2019, thr
 ---
 
 Anders has been involved with OrbitDB since finding it in late 2018.
-In March of 2020 I started working on a collaborative filesystem on top of IPFS using OrbitDB. In July 2020 a parter and I leveraged this to build sailplane, a p2p Dropbox-like web app that made us finalists in the first HackFS.
-In February 2021 I was contracted by Equilibrium to maintain OrbitDB and in November we signed an open source grant from Protocol Labs to fund the first part of development for OrbitDB 1.0. During the 6 month grant period I worked on keeping the current version supporting the latest js and go ipfs implementation, as well as a protocol spec and implementation for 1.0.
+In March of 2020 I started working on a collaborative filesystem on top of IPFS using OrbitDB. In July 2020 a partner and I leveraged this to build Sailplane, a p2p Dropbox-like web app that made us finalists in the first HackFS.
+In February 2021 I was contracted by Equilibrium to maintain OrbitDB. In November we signed an open source grant from Protocol Labs to fund the first part of development for OrbitDB 1.0. During the 6 month grant period, I worked on keeping the current version supporting the latest js and go ipfs implementation, as well as a protocol spec and implementation for 1.0.
 
 ## Team code repositories
 
 <!-- Please provide links to your team's prior code repos for similar or related projects. -->
 
 Anders:
-  - https://github.com/orbitdb : maintainer to orbitdb, its submodules, and resources
-  - https://github.com/cypsela/sailplane-web : collaborative filesystem web app built with orbitdb and ipfs [[ref1]](https://showcase.ethglobal.com/hackfs/sailplane-web) [[ref2]](https://filecoin.io/blog/posts/meet-the-hackfs-teams-vol.3/)
-  - https://github.com/tabcat/orbit-db-fsstore : a custom orbitdb database representing a filesystem
+  - https://github.com/orbitdb: maintainer to orbitdb, its submodules, and resources
+  - https://github.com/cypsela/sailplane-web: collaborative filesystem web app built with orbitdb and ipfs [[ref1]](https://showcase.ethglobal.com/hackfs/sailplane-web) [[ref2]](https://filecoin.io/blog/posts/meet-the-hackfs-teams-vol.3/)
+  - https://github.com/tabcat/orbit-db-fsstore: a custom orbitdb database representing a filesystem
 
 Mark:
-  - https://github.com/orbitdb : core contributer to orbitdb, its submodules, and resources
-  - https://github.com/tallylab/tallylab : local-first, end-to-end encrypted data diary app
-  - https://github.com/orbitdb/orbit-db-powergate-io : A bridge between OrbitDB and Powergate
+  - https://github.com/orbitdb: core contributor to orbitdb, its submodules, and resources
+  - https://github.com/tallylab/tallylab: local-first, end-to-end encrypted data diary app
+  - https://github.com/orbitdb/orbit-db-powergate-io: A bridge between OrbitDB and Powergate
 
 # Additional Information
 
