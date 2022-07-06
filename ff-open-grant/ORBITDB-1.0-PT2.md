@@ -176,7 +176,7 @@ https://equilibrium.co
 
 <!-- Please describe (in words) your team's relevant experience, and why you think you are the right team to build this project. You can cite your team's prior experience in similar domains, doing similar dev work, individual team members' backgrounds, etc. -->
 
-Mark Henderson (GitHub, Twitter) is the VP of Engineering at Equilibrium.
+Mark Henderson ([GitHub](https://github.com/aphelionz), [Twitter](https://twitter.com/aphelionz)) is the VP of Engineering at Equilibrium.
 I have led the team starting with the original Rust IPFS grant in late 2019, through engagements with many of the largest names in Web3, and am now circling back to finish the critical work the team started with the original Ziggurat proposal. Core contributor to OrbitDB, Rust IPFS, and Ziggurat.
 
 ---
