@@ -114,6 +114,7 @@ We will be delivering OrbitDB 1.0. This will be a full, stable release.
 **(SEPTEMBER 2022)** Security Audit Begins
 
 **(SEPTEMBER 2022)** Heavier Testing
+  - protocol conformance testing
   - work with the Berty team on cross-implementation testing
   - increase the robustness of replication tests
 
