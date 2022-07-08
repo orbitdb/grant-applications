@@ -18,7 +18,7 @@
 
 <!-- - Start with the need or problem you are trying to solve with this project. -->
 
-OrbitDB is a peer-to-peer database built on top of IPFS. It uses Merkle-CRDTs (think CRDTs stored in and inter-linked by a Merkle-DAG) to reference, store, and transfer operations made to the database. While blockchain systems are good at consensus, systems like OrbitDB are good at convergence; meaning database peers can handle network partitions and allow for fully asynchronous updates. We believe this will be extremely powerful in media and communication applications by increasing their safety and resilience to network delay.
+OrbitDB is a peer-to-peer database built on top of IPFS. It uses Merkle-CRDTs (think CRDTs stored in and inter-linked by a Merkle-DAG) to reference, store, and transfer operations made to the database. While blockchain systems care about consensus, systems like OrbitDB care about convergence; meaning database peers can handle network partitions and allow for fully asynchronous updates. We believe this will be extremely powerful in media and communication applications by increasing their safety and resilience to network delay.
 
 The project has been around for several years but has not matured with IPFS primarily due to funding. We would like to continue our work with a grant *part 2* which will allow us to finish work from the last six months.
 
@@ -147,7 +147,7 @@ We will be delivering OrbitDB 1.0. This will be a full, stable release.
 
 <!-- Specify your team's long-term plans to maintain this software and upgrade it over time. -->
 
-The plan for this grant is to build a good foundation that will keep the project hyper-maintainable over the years. After the project reaches this level of maintainability, the key is to cultivate a thriving userbase. We believe we can do this by having a good 1.0 release and then continuing to provide a supportive community chat, building features/dev-tools for orbitdb, and providing high-quality resources for learning.
+The plan for this grant is to build a foundation that will keep the project hyper-maintainable over the years. After the project reaches this level of maintainability, the key is to cultivate a thriving userbase. We believe we can do this by having a solid 1.0 release and then continuing to provide a supportive community chat, building features/dev-tools for orbitdb, and providing high-quality resources for learning.
 
 Following the full 1.0 release there will still be room for improvement:
 
