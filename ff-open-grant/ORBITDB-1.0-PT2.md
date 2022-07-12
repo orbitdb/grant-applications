@@ -141,6 +141,14 @@ We will be delivering OrbitDB 1.0. This will be a full, stable release.
 
 ## Total Budget Requested
 
+$19,200.00 in USD, and an amount worth approximately $4,800.00 USD in FIL per month.
+
+This number is based on an allocation of one full time developer and one part-time engineer for oversight / PR review / mentoring etc.
+
+In total, we are requesting eight months of funding which amounts to $153,600 USD and the equivalent of approximately $38,400 in FIL.
+
+In the end, any ratio of USD/FIL is acceptable for payment, provided that the value of FIL is determined by reference to the most recent close price on https://www.coinmarketcap.com on the day immediately prior to the payment.
+
 <!--Sum up the total requested budget across all milestones, and include that figure here. Also, please include a budget breakdown to specify how you are planning to spend these funds. -->
 
 ## Maintenance and Upgrade Plans
