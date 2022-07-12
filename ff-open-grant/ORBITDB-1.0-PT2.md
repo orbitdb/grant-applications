@@ -10,7 +10,7 @@
 
 **(Optional) Technical Sponsor:** Dietrich Ayala, [@autonome](https://github.com/autonome)
 
-**Do you agree to open source all work you do on behalf of this RFP and dual-license under MIT, APACHE2, or GPL licenses?:** `No`
+**Do you agree to open source all work you do on behalf of this RFP and dual-license under MIT, APACHE2, or GPL licenses?:** `No` - OrbitDB has an existing MIT license that predates the Apache/MIT dual license convention.
 
 # Project Description
 
